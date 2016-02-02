@@ -32,12 +32,11 @@ h3 {
   margin: 16px 0;
 }
 
+.error,
 .notification {
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
+  border: 1px solid;
   border-radius: 3px;
   box-sizing: border-box;
-  color: #999999;
   display: none;
   font-size: normal;
   font-weight: bold;
@@ -45,6 +44,18 @@ h3 {
   padding: 10px 20px;
   text-align: center;
   width: 100%;
+}
+
+.error {
+  background-color: #F2DEDE;
+  border-color: #EBCCD1;
+  color: #A94442;
+}
+
+.notification{
+  background-color: #F1F1F1;
+  border-color: #E1E1E1;
+  color: #999999;
 }
 
 .warning {
@@ -75,7 +86,7 @@ button {
   background: -moz-linear-gradient(#00ACA1, #10C9BD);
   background: linear-gradient(#00ACA1, #10C9BD);
   border: none;
-  border-radius: 8px;
+  border-radius: 3px;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
   color: #FFF;
   cursor: pointer;
